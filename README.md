@@ -132,6 +132,32 @@ as the best performing model, based on the validation set. As in the previous ex
 model and evaluated it on the held-out test set. The VotingEnsemble model can be considered as a  meta-model or a 
 model-of models, since it combines the predictions from multiple other models.
 
+## AutoML Model Parameters:
+### automl_settings
+str or dict() or <xref:AzureAutoMLSettings>
+The settings for this current experiment.
+
+### ensemble_run_id
+str
+The ID of the current ensemble run.
+
+### experiment_name
+str
+The name of the current Azure automated ML experiment.
+
+### workspace_name
+str
+The name of the current Azure Machine Learning workspace where the experiment is run.
+
+### subscription_id
+str
+The ID of the current Azure Machine Learning subscription where the experiment is run.
+
+### resource_group_name
+str
+The name of the current Azure resource group.
+
+
 ## 5. Results - pipeline comparison
 
 The full pipeline can be found in the notebook located [here](./udacity_project1_solution.ipynb). 
