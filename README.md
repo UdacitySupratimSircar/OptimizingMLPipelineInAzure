@@ -133,29 +133,8 @@ model and evaluated it on the held-out test set. The VotingEnsemble model can be
 model-of models, since it combines the predictions from multiple other models.
 
 ## AutoML Model Parameters:
-### automl_settings
-str or dict() or <xref:AzureAutoMLSettings>
-The settings for this current experiment.
 
-### ensemble_run_id
-str
-The ID of the current ensemble run.
-
-### experiment_name
-str
-The name of the current Azure automated ML experiment.
-
-### workspace_name
-str
-The name of the current Azure Machine Learning workspace where the experiment is run.
-
-### subscription_id
-str
-The ID of the current Azure Machine Learning subscription where the experiment is run.
-
-### resource_group_name
-str
-The name of the current Azure resource group.
+XgboostClassifier was used in the Voting ensemble and its parameters are n_estimator = 10, learning_rate= 0.1, min_sample_split-3, max_depth-4.
 
 
 ## 5. Results - pipeline comparison
